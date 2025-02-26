@@ -32,8 +32,11 @@ def main():
                 return
 
         screen.fill('black')
+        # player.draw(screen)
+        
         drawable.draw(screen)
         updateable.update(dt)
+        # asteroid_field.update(dt)
         pygame.display.flip()
 
         dt = clock.tick(60)/1000
