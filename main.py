@@ -16,7 +16,7 @@ def main():
 
     Player.containers = (updateable, drawable)
     Asteroid.containers = (asteroid, updateable, drawable)
-    AsteroidField.containers = (updateable)
+    AsteroidField.containers = (updateable, )
 
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
     player = Player(x=SCREEN_WIDTH/2, y=SCREEN_HEIGHT/2)
